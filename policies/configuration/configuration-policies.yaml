@@ -12,17 +12,17 @@ policies:
     manifests:
       - path: manifests/operators
         pruneObjectBehavior: DeleteIfCreated
-        remediationAction: enforce
+        remediationAction: inform
   - name: console-banner
     manifests:
       - path: manifests/console-banner
         pruneObjectBehavior: DeleteIfCreated
-        remediationAction: enforce
+        remediationAction: inform
   - name: migrate-workloads-to-infra-nodes
     manifests:
       - path: manifests/infrastructure-nodes
         pruneObjectBehavior: None
-        remediationAction: enforce
+        remediationAction: inform
     placement:
       placementPath: placements/non-hub-placement.yaml
   - name: oauth-ldap
