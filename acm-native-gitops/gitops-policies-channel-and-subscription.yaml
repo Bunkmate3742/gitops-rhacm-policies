@@ -5,7 +5,9 @@ metadata:
   namespace: policies
 spec:
     type: Git
-    pathname: https://github.com/kfrankli/gitops-rhacm-policies.git
+    pathname: https://github.com/Bunkmate3742/gitops-rhacm-policies
+    insecureSkipVerify: true
+
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
