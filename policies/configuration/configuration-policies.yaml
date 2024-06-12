@@ -18,13 +18,6 @@ policies:
       - path: manifests/console-banner
         pruneObjectBehavior: DeleteIfCreated
         remediationAction: enforce
-  - name: f5-cis-configurations
-    placement:
-      placementPath: placements/non-hub-placement.yaml
-    manifests:
-      - path: manifests/f5-cis
-        pruneObjectBehavior: None
-        remediationAction: inform
   - name: migrate-workloads-to-infra-nodes
     manifests:
       - path: manifests/infrastructure-nodes
